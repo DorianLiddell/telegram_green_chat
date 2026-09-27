@@ -1,0 +1,101 @@
+.chat-header {
+  z-index: 2;
+
+  min-width: 0;
+
+  padding: 0 20px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 11px;
+
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+
+  box-shadow:
+    0 2px 9px
+      rgba(43, 59, 74, 0.04);
+}
+
+.chat-header__avatar {
+  flex: 0 0 44px;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #8fbce0;
+  color: #fff;
+
+  font-weight: 700;
+}
+
+.chat-header__info {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.chat-header__info strong {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-size: 15px;
+}
+
+.chat-header__info span {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  color: var(--muted);
+
+  font-size: 12px;
+}
+
+.chat-header__status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  flex: 0 0 auto;
+
+  color: var(--muted);
+
+  font-size: 12px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #b5bdc4;
+}
+
+.status-dot--connected {
+  background: #40bd3b;
+}
+
+.status-dot--connecting {
+  background: #ffb020;
+}
+
+.status-dot--error {
+  background: #e45454;
+}

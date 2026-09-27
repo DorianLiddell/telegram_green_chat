@@ -1,0 +1,63 @@
+.composer {
+  width: min(850px, 100%);
+
+  margin: 0 auto;
+
+  padding: 12px 20px 16px;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 46px;
+  gap: 10px;
+}
+
+.composer__input {
+  min-height: 46px;
+  max-height: 130px;
+
+  padding: 12px 14px;
+
+  resize: vertical;
+
+  border-radius: 13px;
+
+  line-height: 1.45;
+}
+
+.composer__input:disabled {
+  background: #f1f4f6;
+}
+
+.send-button {
+  width: 46px;
+  height: 46px;
+
+  align-self: end;
+
+  border: 0;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--blue);
+  color: #fff;
+
+  font-size: 19px;
+
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease;
+}
+
+.send-button:hover:not(:disabled) {
+  background: var(--blue-dark);
+}
+
+.send-button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.send-button:disabled {
+  opacity: 0.45;
+}

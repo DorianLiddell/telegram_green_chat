@@ -1,0 +1,86 @@
+@media (max-width: 860px) {
+  .app-shell {
+    grid-template-columns: 280px minmax(0, 1fr);
+  }
+
+  .chat-header__status {
+    display: none;
+  }
+
+  .message-bubble {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 680px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+
+    grid-template-rows:
+      auto
+      minmax(520px, 1fr);
+  }
+
+  .sidebar {
+    max-height: 280px;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .sidebar__section {
+    min-height: 0;
+  }
+
+  .chat-window {
+    min-height: 0;
+  }
+
+  .message-bubble {
+    max-width: 88%;
+  }
+
+  .chat-header {
+    padding: 0 14px;
+  }
+
+  .messages {
+    padding: 18px 12px;
+  }
+
+  .composer {
+    padding:
+      10px
+      12px
+      12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 26px 20px;
+  }
+
+  .auth-header h1 {
+    font-size: 24px;
+  }
+
+  .sidebar__header {
+    min-height: 64px;
+  }
+
+  .chat-header {
+    min-height: 64px;
+  }
+
+  .chat-header__avatar {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+  }
+
+  .message-bubble {
+    max-width: 92%;
+  }
+}
